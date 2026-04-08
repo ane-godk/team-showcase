@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header com navegação e botão de tema -->
+    <header>
+        <div class="header-top">
+            <h1>Front End Team</h1>
+        </div>
+        <div class="header-divider"></div>
+        <div class="header-bottom">
+            <!-- Menu de navegação com dropdown -->
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#team" aria-haspopup="true" aria-expanded="false">Equipe</a>
+                        <ul class="dropdown-menu" role="menu" aria-hidden="true">
+                            <li role="none"><a href="leonardo.html?member=leonardo" data-member="leonardo" class="active" role="menuitem">Leonardo</a></li>
+                            <li role="none"><a href="julia.html?member=julia" data-member="julia" class="active" role="menuitem">Julia</a></li>
+                            <li role="none"><a href="kelly.html?member=kelly" data-member="kelly" class="active" role="menuitem">Kelly</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Conteúdo principal da página -->
+    <main>
+        <p>Esta é a apresentação da nossa equipe!</p>
+        <!-- Campo de busca para filtrar membros -->
+        <div class="search-box">
+            <label for="member-search" class="sr-only">Pesquisar integrantes</label>
+            <input id="member-search" type="search" placeholder="Buscar integrantes..." aria-label="Pesquisar integrantes">
+        </div>
+        <!-- Container dos cards da equipe -->
+        <section id="team" class="team-container">
+            <!-- Card do Leonardo -->
+            <a href="leonardo.html" class="businessCard" id="leonardo">
+                <div class="team-card">
+                    <img alt="Foto de perfil de Leonardo">
+                    <h3>Leonardo</h3>
+                    <p>Estudante veterano de Análise e Desenvolvimento de Sistemas e contribuidor da atlética Computos da universidade.</p>
+                </div>
+            </a>
+            <!-- Card da Julia -->
+            <a href="julia.html" class="businessCard" id="julia">
+                <div class="team-card">
+                    <img alt="Foto de perfil de Julia">
+                    <h3>Julia</h3>
+                    <p>Estudante veterana de Análise e Desenvolvimento de Sistemas e contribuidora da atlética Computos da universidade.</p>
+                </div>
+            </a>
+            <!-- Card da Kelly -->
+            <a href="kelly.html" class="businessCard" id="kelly">
+                <div class="team-card">
+                    <img alt="Foto de perfil de Kelly">
+                    <h3>Kelly</h3>
+                    <p>Estudante veterana de Análise e Desenvolvimento de Sistemas. Eu gosto de programação e design.</p>
+                </div>
+            </a>
+        </section>
+    </main>
+    
+    <!-- Footer com informações da equipe -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-title">Front End Team</span>
+                <span class="footer-sub">Análise e Desenvolvimento de Sistemas</span>
+            </div>
+            <div class="footer-divider-v"></div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+            </div>
+            <div class="footer-divider-v"></div>
+            <div class="footer-members">
+                <span>Leonardo</span>
+                <span>Julia</span>
+                <span>Kelly</span>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Front End Team &mdash; Atlética Computos</p>
+        </div>
+    </footer>
+    <!-- Script JavaScript para funcionalidades interativas -->
+    <script src="script.js"></script>
+</body>
+</html>
